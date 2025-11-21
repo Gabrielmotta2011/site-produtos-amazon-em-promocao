@@ -27,7 +27,7 @@ header h1 {
     text-align: center;
     border-radius: 50px;
     color: #ff0000;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 header div {
@@ -171,4 +171,5 @@ footer a {
 footer a:hover {
     color: #5a5a5a; /* Escurece um pouco no hover */
     text-decoration: underline;
+
 }
