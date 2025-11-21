@@ -1,0 +1,174 @@
+/* Reset básico e estilos do corpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3e0c1; /* Um cinza pastel muito claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #ac9274; /* Um bege pastel suave */
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid #c9b7a9; /* Tom mais escuro para profundidade */
+}
+
+header h1 {
+    font-size: 5rem;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 50px;
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Estilos para a barra de busca e botão */
+header input[type="text"] {
+    width: 100%;
+    height: 50px;
+    max-width: 700px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Bordas arredondadas para um look suave */
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header input[type="text"]:focus {
+    outline: none;
+    border-color: #a89a90;
+    box-shadow: 0 0 8px rgba(168, 154, 144, 0.4);
+}
+
+header button {
+    padding: 0.75rem 1.5rem;
+    background-color: #695541; /* Cor pastel de destaque */
+    color: rgb(255, 160, 65);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header button:hover {
+    background-color: rgb(225, 209, 189); /* Tom mais escuro no hover */
+    color: #695541;
+    transform: translateY(-2px);
+}
+
+/* Estilos do Conteúdo Principal */
+main {
+    padding: 2rem 1rem;
+}
+
+main section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Espaço reservado para os produtos que serão adicionados */
+    min-height: 50vh; 
+}
+
+/* Estilos para cada card de produto */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px; /* Bordas mais suaves */
+    border: #333, solid, 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 500px;
+    height: 500px;
+    overflow: hidden; /* Garante que a imagem respeite as bordas arredondadas */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Efeito de elevação */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagem do card */
+.card img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 30px;
+    object-fit: scale-down; /* Evita distorção da imagem */
+    transition: transform 0.3s ease; /* Adiciona transição para o efeito de zoom */
+}
+
+.card h2 {
+    font-size: 1.4em;
+    text-align: center;
+    color: #8f6105;
+    padding: 10px;
+    transition: color 0.3s ease; /* Transição suave da cor do texto */
+}
+
+/* Botão de compra dentro do card */
+.card a {
+    background-color: #ffff00;
+    color: rgb(129, 0, 250);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    border: #333, solid, 3px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    margin: 50px; /* Empurra o botão para o final do card */    
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição de transformação */
+}
+
+.card a:hover {
+    background-color: #1aff00;
+    transform: scale(1.05); /* Efeito de crescimento sutil */
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #ac9274; /* Mesma cor do cabeçalho para consistência */
+    color: #5a5a5a;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #d1c8c1;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: #883d07; /* Cor pastel para o link */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #5a5a5a; /* Escurece um pouco no hover */
+    text-decoration: underline;
+}
